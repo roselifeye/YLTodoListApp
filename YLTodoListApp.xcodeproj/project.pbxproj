@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		089DBDDA1E7E2AF5CDF31903 /* libPods-YLTodoListApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C6711169A1FDB9927EB4D71 /* libPods-YLTodoListApp.a */; };
 		8B9E580420445A12004C6A95 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9E580320445A12004C6A95 /* AppDelegate.m */; };
 		8B9E580720445A12004C6A95 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9E580620445A12004C6A95 /* ViewController.m */; };
 		8B9E580A20445A12004C6A95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B9E580820445A12004C6A95 /* Main.storyboard */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C6711169A1FDB9927EB4D71 /* libPods-YLTodoListApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YLTodoListApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8370B7924B0E9B6C6548F461 /* Pods-YLTodoListApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YLTodoListApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YLTodoListApp/Pods-YLTodoListApp.debug.xcconfig"; sourceTree = "<group>"; };
 		8B9E57FF20445A12004C6A95 /* YLTodoListApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YLTodoListApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B9E580220445A12004C6A95 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8B9E580320445A12004C6A95 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 		8B9E580E20445A14004C6A95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B9E581020445A14004C6A95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B9E581120445A14004C6A95 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9E8BD390C0B4B3F41AF4794D /* Pods-YLTodoListApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YLTodoListApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-YLTodoListApp/Pods-YLTodoListApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				089DBDDA1E7E2AF5CDF31903 /* libPods-YLTodoListApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		88533A7509517DB13616FC5C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8370B7924B0E9B6C6548F461 /* Pods-YLTodoListApp.debug.xcconfig */,
+				9E8BD390C0B4B3F41AF4794D /* Pods-YLTodoListApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8B9E57F620445A12004C6A95 = {
 			isa = PBXGroup;
 			children = (
 				8B9E580120445A12004C6A95 /* YLTodoListApp */,
 				8B9E580020445A12004C6A95 /* Products */,
+				88533A7509517DB13616FC5C /* Pods */,
+				97DB1DA0580D1D6060B25D47 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +87,14 @@
 			path = YLTodoListApp;
 			sourceTree = "<group>";
 		};
+		97DB1DA0580D1D6060B25D47 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C6711169A1FDB9927EB4D71 /* libPods-YLTodoListApp.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,9 +102,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8B9E581520445A14004C6A95 /* Build configuration list for PBXNativeTarget "YLTodoListApp" */;
 			buildPhases = (
+				3C7B1EFAF26193008BF7BC28 /* [CP] Check Pods Manifest.lock */,
 				8B9E57FB20445A12004C6A95 /* Sources */,
 				8B9E57FC20445A12004C6A95 /* Frameworks */,
 				8B9E57FD20445A12004C6A95 /* Resources */,
+				AEE89563DB6366E40BC67622 /* [CP] Embed Pods Frameworks */,
+				7A9A8A9489A4598161844D9F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -135,6 +162,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C7B1EFAF26193008BF7BC28 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YLTodoListApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A9A8A9489A4598161844D9F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YLTodoListApp/Pods-YLTodoListApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AEE89563DB6366E40BC67622 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YLTodoListApp/Pods-YLTodoListApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8B9E57FB20445A12004C6A95 /* Sources */ = {
@@ -281,11 +359,13 @@
 		};
 		8B9E581620445A14004C6A95 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8370B7924B0E9B6C6548F461 /* Pods-YLTodoListApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UH7E7796RB;
 				INFOPLIST_FILE = YLTodoListApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,11 +378,13 @@
 		};
 		8B9E581720445A14004C6A95 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E8BD390C0B4B3F41AF4794D /* Pods-YLTodoListApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UH7E7796RB;
 				INFOPLIST_FILE = YLTodoListApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
